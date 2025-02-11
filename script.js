@@ -63,6 +63,7 @@ function selecionarPergunta() {
   return escolha;
 }
 
+//fluxo de jogo//
 function iniciarJogo() {
     const tabuleiro = document.getElementById("tabuleiro");
     if (tabuleiro) {
