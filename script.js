@@ -63,12 +63,11 @@ function selecionarPergunta() {
   return escolha;
 }
 
-// Fluxo do Jogo
 function iniciarJogo() {
     const tabuleiro = document.getElementById("tabuleiro");
-  if (tabuleiro) {
-    tabuleiro.style.display = "grid" ;
-  }
+    if (tabuleiro) {
+        tabuleiro.style.display = "grid"; // Agora será exibido corretamente
+    }
   document.getElementById("intro").classList.add("hidden");
   document.getElementById("personagem").classList.remove("hidden");
   document.getElementById("company-bar-container").classList.add("hidden");
