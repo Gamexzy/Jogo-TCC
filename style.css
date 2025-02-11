@@ -169,7 +169,7 @@ button:hover {
    🎲 TABULEIRO (BOARD)
    =================================================== */
 #tabuleiro {
-  display: none;
+  display: none !important;
 }
 
 .board-container {
