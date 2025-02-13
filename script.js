@@ -8,7 +8,7 @@ let perguntasRespondidas = 0,
     personagemSelecionado = null,
     nomeJogador = "",
     erros = 0,
-    MAX_ERROS = 4,
+    MAX_ERROS = 10,
     progresso = 0;
 
 import { perguntas } from "./perguntas.js";
@@ -65,14 +65,8 @@ function selecionarPergunta() {
 
 //fluxo de jogo//
 function iniciarJogo() {
-    const tabuleiro = document.getElementById("tabuleiro");
-    if (tabuleiro) {
-        tabuleiro.style.display = "grid"; // Agora será exibido corretamente
-    }
   document.getElementById("intro").classList.add("hidden");
   document.getElementById("personagem").classList.remove("hidden");
-  document.getElementById("company-bar-container").classList.add("hidden");
-  resetarTabuleiro();
 }
 
 function updateProgress() {
@@ -110,8 +104,8 @@ function carregarPergunta() {
 function verificarResposta(i, btn) {
   Array.from(document.querySelectorAll("#opcoes button")).forEach(b => b.disabled = true);
   const correta = i === perguntaAtual.correta;
-  const casas = document.querySelectorAll("#tabuleiro div");
-  
+  const casas = document.querySelectorAll("#tabuleiro .casa");
+
   if (correta) {
     acertos++;
     btn.classList.add("correct");
@@ -129,7 +123,7 @@ function verificarResposta(i, btn) {
     companyState -= base * fator;
     erros++;
   }
-  
+
   progresso++;
   companyState = Math.min(Math.max(companyState, 0), 100);
   updateCompanyBar();
@@ -146,6 +140,9 @@ function verificarResposta(i, btn) {
                    (correta ? perguntaAtual.detalhesCorreto : perguntaAtual.detalhesIncorreto);
     mostrarExplicacao(textoExp);
   }, 1000);
+
+  // **Aqui movemos a imagem apenas depois de verificar a resposta**
+  moverImagem();
 }
 
 // Telas e Feedback
@@ -213,42 +210,18 @@ function mostrarRanking(percentile) {
   document.getElementById("resultado").appendChild(rankingDiv);
 }
 
-// Tabuleiro
-function criarTabuleiro() {
-  const tabuleiro = document.createElement("div");
-  tabuleiro.id = "tabuleiro";
-  tabuleiro.style.display = "grid";
-  tabuleiro.style.gridTemplateColumns = "repeat(5, 50px)";
-  tabuleiro.style.gridGap = "10px";
-  tabuleiro.style.marginTop = "20px";
-  
-  for (let i = 1; i <= 10; i++) {
-    const casa = document.createElement("div");
-    casa.textContent = i;
-    casa.style.width = "50px";
-    casa.style.height = "50px";
-    casa.style.display = "flex";
-    casa.style.alignItems = "center";
-    casa.style.justifyContent = "center";
-    casa.style.border = "2px solid black";
-    casa.style.background = "lightgray";
-    tabuleiro.appendChild(casa);
-  }
-  document.body.appendChild(tabuleiro);
-}
-
-function resetarTabuleiro() {
-  document.querySelectorAll("#tabuleiro div").forEach(casa => casa.style.background = "lightgray");
-}
+//Tabuleiro
+import { criarTabuleiro, excluirImagem, apagarTabuleiro, moverImagem } from "./tabuleiro.js";
 
 // Event Listeners
-document.addEventListener("DOMContentLoaded", criarTabuleiro);
 
 document.querySelectorAll('.personagem-card').forEach(card => {
   card.addEventListener('click', () => {
     document.querySelectorAll('.personagem-card').forEach(c => c.classList.remove('selected'));
     card.classList.add('selected');
-    personagemSelecionado = card.querySelector('p').textContent;
+
+    // Captura o src da imagem do personagem
+    personagemSelecionado = card.querySelector('img').src;
   });
 });
 
@@ -267,6 +240,7 @@ document.getElementById('btnConfirmarNome').addEventListener('click', () => {
     document.getElementById("nome").classList.add("hidden");
     document.getElementById("quiz").classList.remove("hidden");
     document.getElementById("company-bar-container").classList.remove("hidden");
+    criarTabuleiro(personagemSelecionado);
     perguntasRespondidas = 0;
     acertos = 0;
     companyState = 50;
@@ -285,11 +259,14 @@ document.getElementById("btnContinuar").addEventListener("click", proximaPergunt
 function reiniciarJogo() {
   document.getElementById("resultado").classList.add("hidden");
   document.getElementById("intro").classList.remove("hidden");
+  document.getElementById("company-bar-container").classList.add("hidden");
   perguntasRespondidas = 0;
   acertos = 0;
   companyState = 50;
   erros = 0;
   progresso = 0;
   indicesUsados.clear();
-  resetarTabuleiro();
+  apagarTabuleiro();
+  excluirImagem();
+  index=0
 }

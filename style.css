@@ -1,299 +1,309 @@
 /* ===================================================
    🌟 VARIÁVEIS GERAIS
    =================================================== */
-:root {
-  --primary-color: #2C3E50;
-  --secondary-color: #2980B9;
-  --background-gradient: linear-gradient(135deg, #000000, #111827);
-  --light-color: #ECF0F1;
-  --dark-color: #2C3E50;
-  --success-color: #27AE60;
-  --error-color: #E74C3C;
-  --card-bg: #ffffff;
-  --text-color: var(--dark-color);
-}
-
-/* 🎨 TEMA ESCURO (PREFERÊNCIA DO USUÁRIO) */
-@media (prefers-color-scheme: dark) {
-  :root {
+   :root {
+    --primary-color: #2C3E50;
+    --secondary-color: #2980B9;
+    --background-gradient: linear-gradient(135deg, #000000, #111827);
+    --light-color: #ECF0F1;
+    --dark-color: #2C3E50;
+    --success-color: #27AE60;
+    --error-color: #E74C3C;
+    --card-bg: #ffffff;
+    --text-color: var(--dark-color);
+  }
+  
+  /* 🎨 TEMA ESCURO (PREFERÊNCIA DO USUÁRIO) */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary-color: #0A0A0A;
+      --secondary-color: #111827;
+      --background-gradient: linear-gradient(135deg, #2980B9, #2C3E50);
+      --light-color: #D1D5DB;
+      --dark-color: #F9FAFB;
+      --card-bg: #121212;
+      --text-color: #F9FAFB;
+    }
+  }
+  
+  /* 🎨 TEMAS ALTERNÁVEIS */
+  [data-theme="dark"] {
     --primary-color: #0A0A0A;
     --secondary-color: #111827;
-    --background-gradient: linear-gradient(135deg, #2980B9, #2C3E50);
+    --background-gradient: linear-gradient(135deg, #000000, #111827);
     --light-color: #D1D5DB;
     --dark-color: #F9FAFB;
     --card-bg: #121212;
     --text-color: #F9FAFB;
   }
-}
-
-/* 🎨 TEMAS ALTERNÁVEIS */
-[data-theme="dark"] {
-  --primary-color: #0A0A0A;
-  --secondary-color: #111827;
-  --background-gradient: linear-gradient(135deg, #000000, #111827);
-  --light-color: #D1D5DB;
-  --dark-color: #F9FAFB;
-  --card-bg: #121212;
-  --text-color: #F9FAFB;
-}
-
-[data-theme="light"] {
-  --primary-color: #2C3E50;
-  --secondary-color: #2980B9;
-  --background-gradient: linear-gradient(135deg, #2980B9, #2C3E50);
-  --light-color: #ECF0F1;
-  --dark-color: #2C3E50;
-  --card-bg: #ffffff;
-  --text-color: var(--dark-color);
-}
-
-/* ===================================================
-   🌎 ESTILOS GERAIS
-   =================================================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background: var(--background-gradient);
-  color: var(--light-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-}
-
-/* 🎭 CONTAINERS */
-.container {
-  width: 100%;
-  max-width: 600px;
-  background: var(--light-color);
-  color: var(--dark-color);
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  margin: 20px 0;
-  position: relative;
-}
-
-/* 🔥 TEMA ESCURO PARA CONTAINERS */
-[data-theme="dark"] .container {
-  background: var(--card-bg);
-  color: #F9FAFB;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* ===================================================
-   🎭 ELEMENTOS BÁSICOS
-   =================================================== */
-h2, h3 {
-  color: var(--text-color);
-  margin-bottom: 20px;
-}
-
-p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.hidden {
-  display: none;
-}
-
-/* ===================================================
-   🔘 BOTÕES
-   =================================================== */
-button {
-  background: var(--primary-color);
-  color: var(--light-color);
-  border: none;
-  border-radius: 5px;
-  padding: 12px 25px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
-  margin: 8px auto;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-button:hover {
-  background: var(--secondary-color);
-  transform: translateY(-2px);
-}
-
-.correct {
-  background: var(--success-color) !important;
-}
-
-.incorrect {
-  background: var(--error-color) !important;
-}
-
-/* 🎭 BOTÕES NO TEMA ESCURO */
-[data-theme="dark"] button {
-  background: #1F2937;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-[data-theme="dark"] button:hover {
-  background: #374151;
-}
-
-/* ===================================================
-   📊 BARRA DE PROGRESSO
-   =================================================== */
-#company-bar-container {
-  width: 100%;
-  max-width: 600px;
-  height: 20px;
-  background: #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 20px auto 0;
-}
-
-#company-bar {
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(90deg, #27AE60, #2980B9);
-  transition: width 0.5s ease-out;
-}
-
-/* ===================================================
-   🎲 TABULEIRO (BOARD)
-   =================================================== */
-#tabuleiro {
-  display: none;
-}
-
-.board-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-  position: absolute;
-  top: -60px;
-  left: -60px;
-  right: -60px;
-  bottom: -60px;
-  z-index: -1;
-}
-
-.board-cell {
-  width: 50px;
-  height: 50px;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-
-.correct-cell {
-  background-color: var(--success-color) !important;
-}
-
-.incorrect-cell {
-  background-color: var(--error-color) !important;
-}
-
-/* ===================================================
-   🏆 RANKING
-   =================================================== */
-#ranking {
-  margin-top: 20px;
-  text-align: center;
-}
-
-#ranking svg {
-  width: 120px;
-  height: 120px;
-}
-
-/* ===================================================
-   🧑‍🎨 SELEÇÃO DE PERSONAGEM
-   =================================================== */
-.personagem-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin: 20px 0;
-}
-
-.personagem-card {
-  cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  padding: 10px;
-  transition: all 0.3s;
-  text-align: center;
-}
-
-.personagem-card.selected {
-  border-color: var(--secondary-color);
-  background-color: rgba(41, 128, 185, 0.1);
-}
-
-.personagem-img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-/* 🎭 PERSONAGEM NO TEMA ESCURO */
-[data-theme="dark"] .personagem-card {
-  background-color: #1E1E1E;
-  color: var(--text-color);
-}
-
-[data-theme="dark"] .personagem-card.selected {
-  background-color: rgba(31, 97, 141, 0.4);
-}
-
-/* ===================================================
-   ✏️ INPUT DE NOME
-   =================================================== */
-#inputNome {
-  width: 100%;
-  padding: 12px;
-  margin: 20px 0;
-  border: 2px solid var(--primary-color);
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-/* ===================================================
-   🌞 BOTÃO DE TROCA DE TEMA
-   =================================================== */
-.theme-toggle {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  background: var(--primary-color);
-  color: var(--light-color);
-  font-size: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-}
-
-.theme-toggle:hover {
-  background: var(--secondary-color);
-  transform: scale(1.1);
-}
+  
+  [data-theme="light"] {
+    --primary-color: #2C3E50;
+    --secondary-color: #2980B9;
+    --background-gradient: linear-gradient(135deg, #2980B9, #2C3E50);
+    --light-color: #ECF0F1;
+    --dark-color: #2C3E50;
+    --card-bg: #ffffff;
+    --text-color: var(--dark-color);
+  }
+  
+  /* ===================================================
+     🌎 ESTILOS GERAIS
+     =================================================== */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-gradient);
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* 🎭 CONTAINERS */
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  /* 🔥 TEMA ESCURO PARA CONTAINERS */
+  [data-theme="dark"] .container {
+    background: var(--card-bg);
+    color: #F9FAFB;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* ===================================================
+     🎭 ELEMENTOS BÁSICOS
+     =================================================== */
+  h2, h3 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* ===================================================
+     🔘 BOTÕES
+     =================================================== */
+  button {
+    background: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin: 8px auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+  }
+  
+  .correct {
+    background: var(--success-color) !important;
+  }
+  
+  .incorrect {
+    background: var(--error-color) !important;
+  }
+  
+  /* 🎭 BOTÕES NO TEMA ESCURO */
+  [data-theme="dark"] button {
+    background: #1F2937;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  [data-theme="dark"] button:hover {
+    background: #374151;
+  }
+  
+  /* ===================================================
+     📊 BARRA DE PROGRESSO
+     =================================================== */
+  #company-bar-container {
+    width: 100%;
+    max-width: 600px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto 0;
+  }
+  
+  #company-bar {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #27AE60, #2980B9);
+    transition: width 0.5s ease-out;
+  }
+  
+  /* ===================================================
+     🎲 TABULEIRO (BOARD)
+     =================================================== */
+  #imagem-frente {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    transform: translate(0, 0);
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+  }
+  
+  #tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 10px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .casa {
+    width: 50px;
+    height: 50px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background: lightgray;
+    font-weight: bold;
+  }
+  
+  .correct-cell {
+    background-color: var(--success-color) !important;
+  }
+  
+  .incorrect-cell {
+    background-color: var(--error-color) !important;
+  }
+  /* Casas no tema escuro */
+  [data-theme="dark"] .casa{
+   border: 2px solid #ededed;
+   background: #333333;
+  }
+  
+  /* ===================================================
+     🏆 RANKING
+     =================================================== */
+  #ranking {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #ranking svg {
+    width: 120px;
+    height: 120px;
+  }
+  
+  /* ===================================================
+     🧑‍🎨 SELEÇÃO DE PERSONAGEM
+     =================================================== */
+  .personagem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 0px 0;
+  }
+  
+  .personagem-card {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  
+  .personagem-card.selected {
+    border-color: var(--secondary-color);
+    background-color: rgba(41, 128, 185, 0.1);
+  }
+  
+  .personagem-img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* 🎭 PERSONAGEM NO TEMA ESCURO */
+  [data-theme="dark"] .personagem-card {
+    background-color: #1E1E1E;
+    color: var(--text-color);
+  }
+  
+  [data-theme="dark"] .personagem-card.selected {
+    background-color: rgba(31, 97, 141, 0.4);
+  }
+  
+  /* ===================================================
+     ✏️ INPUT DE NOME
+     =================================================== */
+  #inputNome {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* ===================================================
+     🌞 BOTÃO DE TROCA DE TEMA
+     =================================================== */
+  .theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--light-color);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .theme-toggle:hover {
+    background: var(--secondary-color);
+    transform: scale(1.1);
+  }

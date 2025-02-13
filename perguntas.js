@@ -481,10 +481,10 @@ function shuffleArray(array) {
 perguntas.forEach(pergunta => {
   // Salvar a resposta correta original
   const respostaOriginal = pergunta.opcoes[pergunta.correta];
-  
+
   // Embaralhar as opções
   shuffleArray(pergunta.opcoes);
-  
+
   // Atualizar índice da resposta correta
   pergunta.correta = pergunta.opcoes.indexOf(respostaOriginal);
 });
