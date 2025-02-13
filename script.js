@@ -268,5 +268,4 @@ function reiniciarJogo() {
   indicesUsados.clear();
   apagarTabuleiro();
   excluirImagem();
-  index=0
 }
