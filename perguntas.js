@@ -1,257 +1,293 @@
 export const perguntas = [
   // QUESTÕES FÁCEIS (14 questões)
   {
-    pergunta: "Qual o principal objetivo da gestão de estoque em uma empresa?",
-    cenario: "Equilibrar o capital investido e a continuidade da produção.",
+    pergunta: "Imagine que você é o gerente de uma empresa. Qual seria o objetivo número um ao cuidar do estoque?",
+    cenario: "Pense em equilibrar o dinheiro da empresa com a produção contínua dos produtos.",
     opcoes: [
-      "Minimizar o capital empatado, garantindo a continuidade da produção.",
-      "Manter altos níveis para evitar faltas.",
-      "Eliminar completamente os estoques."
-    ],
-    correta: 0,
-    detalhesCorreto: "Reflete o equilíbrio essencial na gestão de estoque.",
-    detalhesIncorreto: "Manter estoques altos gera custos desnecessários.",
-    dificuldade: "facil"
-  },
-  {
-    pergunta: "Qual é o foco principal da filosofia Lean Manufacturing?",
-    cenario: "O objetivo é otimizar processos e eliminar desperdícios.",
-    opcoes: [
-      "Redução de desperdícios e otimização de processos.",
-      "Aumento da produção sem considerar a qualidade.",
-      "Centralização das decisões na alta administração."
-    ],
-    correta: 0,
-    detalhesCorreto: "O Lean busca eliminar desperdícios e melhorar continuamente.",
-    detalhesIncorreto: "As outras alternativas não correspondem aos princípios do Lean.",
-    dificuldade: "facil"
-  },
-  {
-    pergunta: "No método 5S, o que significa o 'Seiri'?",
-    cenario: "Organizar o ambiente de trabalho.",
-    opcoes: [
-      "Eliminar itens desnecessários e manter o essencial.",
-      "Organizar os itens necessários de forma lógica.",
-      "Manter o ambiente limpo."
-    ],
-    correta: 0,
-    detalhesCorreto: "'Seiri' significa separar o necessário do supérfluo.",
-    detalhesIncorreto: "As outras alternativas referem-se a outros S.",
-    dificuldade: "facil"
-  },
-  {
-    pergunta: "O que é o Kaizen?",
-    cenario: "Busca por melhorias contínuas na empresa.",
-    opcoes: [
-      "Melhoria contínua por pequenas mudanças.",
-      "Corte de custos com demissões.",
-      "Mudanças radicais imediatas."
-    ],
-    correta: 0,
-    detalhesCorreto: "Kaizen enfatiza melhorias incrementais constantes.",
-    detalhesIncorreto: "As demais alternativas não correspondem ao conceito.",
-    dificuldade: "facil"
-  },
-  {
-    pergunta: "Em Lean Manufacturing, qual termo designa atividades sem valor agregado?",
-    cenario: "Identifique desperdícios.",
-    opcoes: [
-      "Muda",
-      "Kanban",
-      "Poka-yoke"
+      "Gastar o mínimo possível com estoque, mas sempre ter produtos para produzir.",
+      "Acabar com o estoque de vez para não ter dor de cabeça.",
+      "Encher o depósito de estoque para nunca faltar nada, mesmo que sobre muito."
     ],
     correta: 0,
     explicacoes: [
-      "Correta. 'Muda' designa desperdício.",
-      "Incorreta. Kanban é uma ferramenta de controle visual.",
-      "Incorreta. Poka-yoke previne erros."
+      "Correta. Este objetivo equilibra custo e disponibilidade, essencial para a gestão de estoque.",
+      "Incorreta. Eliminar o estoque pode parar a produção e perder vendas.",
+      "Incorreta. Excesso de estoque gera custos desnecessários de armazenagem e obsolescência."
     ],
     dificuldade: "facil"
   },
   {
-    pergunta: "Qual dos seguintes itens NÃO faz parte dos 5S?",
-    cenario: "Identifique o item que não pertence ao método 5S.",
+    pergunta: "Qual a principal ideia por trás do 'Lean Manufacturing'?",
+    cenario: "O Lean Manufacturing busca fazer mais e melhor, mas sem desperdiçar nada.",
     opcoes: [
-      "Seiri (Senso de Utilização)",
+      "Aumentar a produção ao máximo, sem se importar muito com a qualidade final.",
+      "Fazer o máximo de produtos, gastando o mínimo possível e evitando qualquer tipo de desperdício.",
+      "Deixar que só os chefes decidam tudo na empresa."
+    ],
+    correta: 1,
+    explicacoes: [
+      "Incorreta. Lean Manufacturing prioriza a qualidade e a eficiência, não apenas a quantidade.",
+      "Correta. Lean Manufacturing visa a produção eficiente, eliminando desperdícios e otimizando recursos.",
+      "Incorreta. Lean Manufacturing valoriza a participação de todos, não apenas decisões centralizadas."
+    ],
+    dificuldade: "facil"
+  },
+  {
+    pergunta: "No método 5S, 'Seiri' é o primeiro passo. O que ele significa na prática?",
+    cenario: "Pense em organizar sua mesa de trabalho. O que você faria primeiro?",
+    opcoes: [
+      "Tirar tudo o que não precisa e deixar só o essencial.",
+      "Fazer uma faxina geral.",
+      "Arrumar tudo o que você precisa em seu devido lugar."
+    ],
+    correta: 0,
+    explicacoes: [
+      "Correta. 'Seiri' (Utilização) foca em remover o desnecessário para otimizar o espaço e recursos.",
+      "Incorreta. Faxina geral é mais abrangente e menos focada no descarte do desnecessário.",
+      "Incorreta. Arrumar vem depois de descartar o desnecessário, no 'Seiton' (Organização)."
+    ],
+    dificuldade: "facil"
+  },
+  {
+    pergunta: "O que realmente significa 'Kaizen' no dia a dia de uma empresa?",
+    cenario: "Kaizen é sobre nunca parar de buscar melhorias, não importa quão pequenas.",
+    opcoes: [
+      "Melhorar um pouquinho a cada dia, com pequenas mudanças constantes.",
+      "Fazer grandes mudanças de uma vez só, sem pensar muito.",
+      "Reduzir custos demitindo pessoas."
+    ],
+    correta: 0,
+    explicacoes: [
+      "Correta. Kaizen é a filosofia de melhoria contínua e incremental, com pequenas mudanças diárias.",
+      "Incorreta. Kaizen foca em melhorias graduais, não em grandes mudanças repentinas.",
+      "Incorreta. Redução de custos por demissão não reflete o princípio de melhoria do Kaizen."
+    ],
+    dificuldade: "facil"
+  },
+  {
+    pergunta: "Em Lean Manufacturing, qual palavra usamos para falar de tudo aquilo que não traz valor ao produto ou serviço?",
+    cenario: "Imagine que você está limpando sua casa. O que você considera 'lixo' nesse contexto?",
+    opcoes: [
+      "Poka-yoke",
+      "Muda",
+      "Kanban"
+    ],
+    correta: 1,
+    explicacoes: [
+      "Incorreta. Poka-yoke é um mecanismo à prova de erros.",
+      "Correta. 'Muda' é o termo Lean para desperdício, atividades que não agregam valor.",
+      "Incorreta. Kanban é um sistema de gestão visual da produção."
+    ],
+    dificuldade: "facil"
+  },
+  {
+    pergunta: "Qual destes 'S' NÃO faz parte do método 5S?",
+    cenario: "Pense nos 5 passos do 5S. Qual nome 'estranho' você identifica?",
+    opcoes: [
       "Seiketsu (Padronização)",
+      "Seiri (Senso de Utilização)",
       "Seiritsu (Organização Física)"
     ],
     correta: 2,
     explicacoes: [
-      "Incorreta. Seiri é o primeiro S.",
-      "Incorreta. Seiketsu é o quarto S.",
-      "Correta. 'Seiritsu' não faz parte dos 5S."
+      "Incorreta. Seiketsu (Padronização) é o 4º S, focado em manter a organização.",
+      "Incorreta. Seiri (Senso de Utilização) é o 1º S, sobre descartar o desnecessário.",
+      "Correta. 'Seiritsu' não é um dos 5S originais, os 'S' são Seiri, Seiton, Seiso, Seiketsu e Shitsuke."
     ],
     dificuldade: "facil"
   },
   {
-    pergunta: "Qual é o principal objetivo do método 5S?",
-    cenario: "Melhorar a organização e a limpeza do ambiente.",
+    pergunta: "Qual o principal objetivo do método 5S em uma empresa?",
+    cenario: "Pense em um escritório bagunçado e um organizado. Qual ambiente é melhor para trabalhar?",
     opcoes: [
-      "Melhorar organização e limpeza.",
-      "Aumentar a produção sem preocupação com qualidade.",
-      "Incentivar o trabalho individual."
+      "Incentivar o trabalho individual.",
+      "Aumentar a produção, mesmo que a qualidade caia.",
+      "Deixar tudo mais organizado e limpo."
+    ],
+    correta: 2,
+    explicacoes: [
+      "Incorreta. 5S visa o trabalho em equipe e um ambiente colaborativo.",
+      "Incorreta. 5S busca aumentar a produtividade com qualidade, não a qualquer custo.",
+      "Correta. O principal objetivo do 5S é criar um ambiente de trabalho organizado, limpo e seguro."
+    ],
+    dificuldade: "facil"
+  },
+  {
+    pergunta: "Por que a participação de todos os funcionários é tão importante no Kaizen?",
+    cenario: "Imagine uma corrente: quanto mais pessoas puxarem juntas, mais forte ela fica.",
+    opcoes: [
+      "Porque a melhoria contínua só acontece quando todos dão ideias e ajudam.",
+      "Porque a mudança vem somente de consultores externos.",
+      "Porque apenas os gerentes devem propor melhorias."
     ],
     correta: 0,
-    detalhesCorreto: "Cria um ambiente mais organizado e seguro.",
-    detalhesIncorreto: "Não foca em produção à custa da qualidade.",
-    dificuldade: "facil"
-  },
-  {
-    pergunta: "Por que é essencial a participação de todos na filosofia Kaizen?",
-    cenario: "O sucesso do Kaizen depende da colaboração de todos os colaboradores.",
-    opcoes: [
-      "Porque a melhoria contínua depende do envolvimento de todos.",
-      "Porque apenas os gerentes devem propor melhorias.",
-      "Porque a mudança vem somente de consultores externos."
+    explicacoes: [
+      "Correta. Kaizen valoriza a inteligência coletiva e a participação de todos para melhoria contínua.",
+      "Incorreta. Kaizen enfatiza soluções internas, com consultores como apoio, não protagonistas.",
+      "Incorreta. Kaizen empodera todos os funcionários, não apenas a gestão, na busca por melhorias."
     ],
-    correta: 0,
-    detalhesCorreto: "A participação de todos é crucial.",
-    detalhesIncorreto: "Restringir a participação prejudica o processo.",
     dificuldade: "facil"
   },
   {
-    pergunta: "O que é o estoque de segurança?",
-    cenario: "Protege a empresa contra imprevistos na demanda.",
+    pergunta: "O que é 'estoque de segurança' em uma empresa?",
+    cenario: "Pense em ter uma reserva extra de comida em casa para emergências.",
     opcoes: [
       "Um estoque adicional para prevenir faltas.",
-      "Um estoque extra para promoções.",
-      "Um estoque que nunca é utilizado."
+      "Um estoque que fica lá parado e nunca é usado.",
+      "Um estoque extra para promoções e liquidações."
     ],
     correta: 0,
-    detalhesCorreto: "Funciona como um colchão contra imprevistos.",
-    detalhesIncorreto: "Não tem finalidade promocional.",
+    explicacoes: [
+      "Correta. Estoque de segurança é uma reserva para suprir demandas inesperadas ou atrasos.",
+      "Incorreta. Estoque de segurança é para uso em contingências, não para ficar inativo.",
+      "Incorreta. Estoque para promoções é planejado, diferente do estoque de segurança para imprevistos."
+    ],
     dificuldade: "facil"
   },
   {
-    pergunta: "O conceito 'Just in Time' é aplicado para:",
-    cenario: "Reduzir desperdícios e sincronizar a produção com a demanda.",
+    pergunta: "O que significa 'Just in Time' no gerenciamento de estoque?",
+    cenario: "Pense em receber os ingredientes para cozinhar no momento exato de usar.",
     opcoes: [
       "Reduzir os níveis de estoque e aumentar a eficiência.",
-      "Aumentar os estoques para evitar faltas.",
-      "Produzir sem considerar a demanda real."
-    ],
-    correta: 0,
-    detalhesCorreto: "O JIT sincroniza a produção com a demanda.",
-    detalhesIncorreto: "As outras alternativas não se aplicam.",
-    dificuldade: "facil"
-  },
-  {
-    pergunta: "O que é o sistema Kanban no contexto do Lean Manufacturing?",
-    cenario: "Gerenciar o fluxo de produção de forma visual.",
-    opcoes: [
-      "Uma ferramenta de controle visual para a produção.",
-      "Um sistema de contabilidade de custos.",
-      "Uma técnica de limpeza industrial."
+      "Produzir sem se preocupar se alguém vai comprar ou não.",
+      "Comprar e produzir o máximo possível para ter sempre muito estoque."
     ],
     correta: 0,
     explicacoes: [
-      "Correta. Utiliza sinais visuais para controlar o fluxo.",
-      "Incorreta. Não está relacionado à contabilidade.",
-      "Incorreta. Não é uma técnica de limpeza."
+      "Correta. Just in Time visa reduzir estoque ao mínimo, sincronizando oferta e demanda para eficiência.",
+      "Incorreta. Just in Time é totalmente focado na demanda, produzindo apenas o necessário.",
+      "Incorreta. Just in Time opõe-se ao acúmulo de estoque, buscando o fluxo contínuo e enxuto."
     ],
     dificuldade: "facil"
   },
   {
-    pergunta: "No método 5S, qual S corresponde à padronização?",
-    cenario: "Identifique o S responsável pela padronização.",
+    pergunta: "O que é 'Kanban' no Lean Manufacturing?",
+    cenario: "Imagine um painel de tarefas com cartões coloridos para organizar o trabalho.",
     opcoes: [
-      "Seiketsu",
+      "Um jeito de deixar a fábrica mais limpa.",
+      "Uma ferramenta de controle visual para a produção, como um semáforo.",
+      "Um sistema de contabilidade de custos."
+    ],
+    correta: 1,
+    explicacoes: [
+      "Incorreta. Limpeza (Seiso) é um dos 5S, mas Kanban é um sistema de controle de produção.",
+      "Correta. Kanban é um sistema visual que controla o fluxo de produção, indicando o que e quando produzir.",
+      "Incorreta. Kanban não é um sistema financeiro, mas sim de gestão da produção e fluxo de materiais."
+    ],
+    dificuldade: "facil"
+  },
+  {
+    pergunta: "No 5S, qual 'S' significa criar regras e padrões para manter tudo organizado?",
+    cenario: "Qual 'S' seria como criar um manual de boas práticas para a organização?",
+    opcoes: [
       "Seiri",
+      "Seiketsu",
       "Seiton"
     ],
-    correta: 0,
+    correta: 1,
     explicacoes: [
-      "Correta. Seiketsu significa padronização.",
-      "Incorreta. Seiri é sobre separar o necessário.",
-      "Incorreta. Seiton se refere à organização física."
+      "Incorreta. Seiri (Utilização) é sobre descartar o desnecessário.",
+      "Correta. Seiketsu (Padronização) cria normas e procedimentos para manter a organização e limpeza.",
+      "Incorreta. Seiton (Organização) é sobre arrumar e ordenar o que restou após o Seiri."
     ],
     dificuldade: "facil"
   },
   {
-    pergunta: "Como o 5S contribui para a segurança no ambiente de trabalho?",
-    cenario: "A organização pode reduzir riscos e acidentes.",
+    pergunta: "Como o 5S ajuda a deixar o trabalho mais seguro?",
+    cenario: "Pense em um ambiente de trabalho organizado e limpo vs. um bagunçado e sujo. Qual é mais seguro?",
     opcoes: [
-      "Ao organizar e manter o ambiente limpo.",
-      "Ao incentivar a sobrecarga de trabalho.",
-      "Ao priorizar apenas a estética."
+      "Porque deixa a empresa mais bonita para os clientes.",
+      "Porque faz as pessoas trabalharem mais e mais rápido.",
+      "Porque organiza tudo e deixa o ambiente limpo, diminuindo riscos de acidentes."
     ],
-    correta: 0,
+    correta: 2,
     explicacoes: [
-      "Correta. Um ambiente organizado facilita a identificação de riscos.",
-      "Incorreta. Não aumenta a sobrecarga.",
-      "Incorreta. Estética sem organização não garante segurança."
+      "Incorreta. A estética é um benefício secundário do 5S, não o principal para segurança.",
+      "Incorreta. 5S não visa aumentar a velocidade do trabalho, mas a eficiência e segurança.",
+      "Correta. A organização e limpeza do 5S reduzem os riscos de acidentes e melhoram a segurança."
     ],
     dificuldade: "facil"
   },
   {
-    pergunta: "Qual é o impacto do 5S na produtividade de uma empresa?",
-    cenario: "O 5S pode aumentar a eficiência e reduzir desperdícios.",
+    pergunta: "De que forma o 5S pode aumentar a produtividade de uma empresa?",
+    cenario: "Imagine procurar uma ferramenta em uma caixa de ferramentas organizada e em uma bagunçada. Onde é mais rápido?",
     opcoes: [
       "Melhora a eficiência ao reduzir o tempo de busca por ferramentas.",
-      "Diminui a produtividade ao impor regras rígidas.",
-      "Não tem impacto na produtividade."
+      "Não tem impacto na produtividade.",
+      "Porque deixa as regras tão rígidas que as pessoas são obrigadas a produzir mais."
     ],
     correta: 0,
     explicacoes: [
-      "Correta. A organização aumenta a eficiência.",
-      "Incorreta. A aplicação correta do 5S não prejudica a produtividade.",
-      "Incorreta. A prática dos 5S aumenta a eficiência operacional."
+      "Correta. 5S aumenta a produtividade ao otimizar a organização, economizando tempo e recursos.",
+      "Incorreta. 5S tem um impacto direto e positivo na produtividade através da organização.",
+      "Incorreta. 5S não se baseia em regras rígidas, mas na organização e disciplina para eficiência."
     ],
     dificuldade: "facil"
   },
 
   // QUESTÕES MÉDIAS (10 questões)
   {
-    pergunta: "Qual técnica é utilizada para reduzir os custos associados à manutenção de estoques?",
-    cenario: "Sua empresa busca métodos para reduzir custos e equilibrar a produção.",
+    pergunta: "Qual técnica é mais indicada para diminuir os gastos com o estoque?",
+    cenario: "Sua empresa quer economizar dinheiro com estoque, sem prejudicar a produção.",
     opcoes: [
+      "Aumentar a quantidade de produtos em cada pedido.",
       "Just in Time (JIT).",
-      "Sistema push.",
-      "Aumento dos lotes de produção."
+      "Sistema push."
     ],
-    correta: 0,
-    detalhesCorreto: "O JIT ajusta a produção com a demanda.",
-    detalhesIncorreto: "Outros métodos podem levar a excesso de estoque.",
+    correta: 1,
+    explicacoes: [
+      "Incorreta. Aumentar pedidos pode elevar os custos de estoque e armazenagem.",
+      "Correta. Just in Time (JIT) minimiza custos ao reduzir o estoque ao essencial.",
+      "Incorreta. Sistema 'push' pode gerar excesso de estoque, elevando os custos."
+    ],
     dificuldade: "medio"
   },
   {
-    pergunta: "Qual dos seguintes princípios não é um dos fundamentos do Lean Manufacturing?",
-    cenario: "Evite práticas ineficientes conhecendo os fundamentos do Lean.",
+    pergunta: "Qual destes princípios NÃO faz parte do Lean Manufacturing?",
+    cenario: "Para ser Lean, alguns princípios são cruciais. Qual destes não se encaixa?",
     opcoes: [
-      "Fluxo contínuo.",
+      "Fazer o fluxo de trabalho seguir sempre em frente, sem interrupções.",
       "Produção em massa sem padronização.",
       "Melhoria contínua."
     ],
     correta: 1,
-    detalhesCorreto: "Produção sem padronização vai contra o Lean.",
-    detalhesIncorreto: "Os outros são pilares do Lean.",
-    dificuldade: "medio"
-  },
-  {
-    pergunta: "Qual é a sequência correta dos 5S?",
-    cenario: "Defina a ordem correta para implementar os 5S.",
-    opcoes: [
-      "Seiri, Seiton, Seiso, Seiketsu, Shitsuke.",
-      "Seiso, Seiketsu, Shitsuke, Seiri, Seiton.",
-      "Shitsuke, Seiri, Seiso, Seiketsu, Seiton."
+    explicacoes: [
+      "Incorreta. Fluxo contínuo é um princípio Lean para evitar interrupções e gargalos.",
+      "Correta. Produção em massa sem padrão contradiz o Lean, que busca processos padronizados e eficientes.",
+      "Incorreta. Melhoria contínua (Kaizen) é um pilar central do Lean Manufacturing."
     ],
-    correta: 0,
-    detalhesCorreto: "A sequência correta é: Seiri, Seiton, Seiso, Seiketsu, Shitsuke.",
-    detalhesIncorreto: "As outras sequências não seguem o método 5S.",
     dificuldade: "medio"
   },
   {
-    pergunta: "Qual alternativa representa melhor a aplicação prática do Kaizen?",
-    cenario: "A participação de todos é essencial para o Kaizen.",
+    pergunta: "Qual é a ordem CERTA dos 5S?",
+    cenario: "Se você fosse ensinar alguém a usar o 5S, qual seria a sequência dos passos?",
+    opcoes: [
+      "Shitsuke, Seiri, Seiso, Seiketsu, Seiton.",
+      "Seiri, Seiton, Seiso, Seiketsu, Shitsuke.",
+      "Seiso, Seiketsu, Shitsuke, Seiri, Seiton."
+    ],
+    correta: 1,
+    explicacoes: [
+      "Incorreta. Esta ordem mistura os 'S' e não segue a sequência lógica do 5S.",
+      "Correta. A ordem correta é: Seiri (Utilização), Seiton (Organização), Seiso (Limpeza), Seiketsu (Padronização), Shitsuke (Disciplina).",
+      "Incorreta. Esta ordem também está incorreta e não otimiza a implementação do 5S."
+    ],
+    dificuldade: "medio"
+  },
+  {
+    pergunta: "Qual destas opções mostra como aplicar o Kaizen na prática?",
+    cenario: "Kaizen funciona melhor com a ajuda de todos. Como colocar isso em ação?",
     opcoes: [
       "Envolvimento de todos para implementar melhorias.",
-      "Mudanças apenas pela alta administração.",
-      "Medidas de curto prazo focadas em resultados financeiros."
+      "Medidas de curto prazo focadas em resultados financeiros.",
+      "Deixar que só os chefes decidam as mudanças na empresa."
     ],
     correta: 0,
-    detalhesCorreto: "O Kaizen envolve todos os níveis na melhoria contínua.",
-    detalhesIncorreto: "As outras opções restringem a participação.",
+    explicacoes: [
+      "Correta. Kaizen na prática significa engajar todos os funcionários na busca por melhorias contínuas.",
+      "Incorreta. Kaizen foca em melhorias contínuas, não apenas em resultados financeiros de curto prazo.",
+      "Incorreta. Kaizen é participativo e horizontal, não centralizado nas decisões da chefia."
+    ],
     dificuldade: "medio"
   },
   {
@@ -264,23 +300,26 @@ export const perguntas = [
     ],
     correta: 0,
     explicacoes: [
-      "Correta. O JIT sincroniza a produção com a demanda.",
-      "Incorreta. O estoque de segurança atua como buffer.",
-      "Incorreta. O lote econômico não visa níveis mínimos."
+      "Correta. Just in Time (JIT) é o sistema que visa reduzir o estoque ao mínimo necessário para a produção.",
+      "Incorreta. Estoque de Segurança é uma reserva, visando ter mais estoque, não menos.",
+      "Incorreta. Lote Econômico de Compra otimiza custos de pedido e estoque, mas não foca no mínimo absoluto."
     ],
     dificuldade: "medio"
   },
   {
-    pergunta: "Qual é o objetivo principal da implementação do Lean Manufacturing?",
+    pergunta: "Qual o principal objetivo da implementação do Lean Manufacturing?",
     cenario: "Reflita sobre como o Lean impacta os processos produtivos.",
     opcoes: [
       "Eliminar desperdícios e aumentar a eficiência.",
-      "Aumentar a burocracia e o controle interno.",
-      "Expandir a produção sem análise dos processos."
+      "Expandir a produção sem análise dos processos.",
+      "Aumentar a burocracia e o controle interno."
     ],
     correta: 0,
-    detalhesCorreto: "O Lean foca na eliminação de desperdícios e na melhoria contínua.",
-    detalhesIncorreto: "As outras alternativas não se aplicam.",
+    explicacoes: [
+      "Correta. O principal objetivo do Lean é otimizar processos, eliminar desperdícios e aumentar a eficiência.",
+      "Incorreta. Lean Manufacturing foca na eficiência e qualidade, não apenas em expandir a produção.",
+      "Incorreta. Lean visa simplificar processos e reduzir a burocracia, não aumentá-la."
+    ],
     dificuldade: "medio"
   },
   {
@@ -288,12 +327,15 @@ export const perguntas = [
     cenario: "Avalie os benefícios de um controle eficiente.",
     opcoes: [
       "Redução de custos operacionais e de armazenagem.",
-      "Aumento dos custos com grandes quantidades de estoque.",
-      "Redução na disponibilidade de produtos."
+      "Redução na disponibilidade de produtos.",
+      "Aumento dos custos com grandes quantidades de estoque."
     ],
     correta: 0,
-    detalhesCorreto: "Um bom controle reduz custos e desperdícios.",
-    detalhesIncorreto: "As outras opções indicam má gestão.",
+    explicacoes: [
+      "Correta. Controle de estoque eficiente reduz custos de operação, armazenagem e perdas por obsolescência.",
+      "Incorreta. Controle eficiente visa otimizar a disponibilidade, evitando faltas e excessos.",
+      "Incorreta. Estoque mal gerenciado leva ao aumento de custos, o oposto de um bom controle."
+    ],
     dificuldade: "medio"
   },
   {
@@ -301,12 +343,15 @@ export const perguntas = [
     cenario: "Como o Lean contribui para a evolução dos processos produtivos?",
     opcoes: [
       "Lean busca constantemente aprimorar os processos, eliminando desperdícios.",
-      "Lean foca apenas na mecanização.",
-      "Lean é incompatível com a melhoria contínua."
+      "Lean é incompatível com a melhoria contínua.",
+      "Lean foca apenas na mecanização."
     ],
     correta: 0,
-    detalhesCorreto: "O Lean enfatiza a melhoria contínua e a eliminação de desperdícios.",
-    detalhesIncorreto: "As outras opções não se aplicam.",
+    explicacoes: [
+      "Correta. Lean Manufacturing e melhoria de processos são intrinsecamente ligados, buscando otimização contínua.",
+      "Incorreta. Melhoria contínua é um dos pilares do Lean Manufacturing.",
+      "Incorreta. Lean engloba pessoas, processos e tecnologia, não apenas mecanização."
+    ],
     dificuldade: "medio"
   },
   {
@@ -314,12 +359,15 @@ export const perguntas = [
     cenario: "Como o Kaizen utiliza os erros?",
     opcoes: [
       "Encarar os erros como oportunidades de aprendizado.",
-      "Punir os responsáveis sem buscar soluções.",
-      "Ignorar os erros para manter a rotina."
+      "Ignorar os erros para manter a rotina.",
+      "Punir os responsáveis sem buscar soluções."
     ],
     correta: 0,
-    detalhesCorreto: "O Kaizen vê os erros como oportunidades para melhorar.",
-    detalhesIncorreto: "As outras alternativas não promovem melhoria.",
+    explicacoes: [
+      "Correta. Kaizen vê erros como oportunidades valiosas para identificar problemas e promover melhorias.",
+      "Incorreta. Ignorar erros impede a melhoria contínua, princípio fundamental do Kaizen.",
+      "Incorreta. Kaizen foca na solução de problemas, não na punição, incentivando um ambiente de aprendizado."
+    ],
     dificuldade: "medio"
   },
   {
@@ -327,27 +375,33 @@ export const perguntas = [
     cenario: "Considere os ganhos da sinergia entre essas abordagens.",
     opcoes: [
       "Reduzindo desperdícios e otimizando o fluxo de materiais.",
-      "Aumentando o estoque e prolongando prazos de entrega.",
-      "Separando os departamentos de produção e logística."
+      "Separando os departamentos de produção e logística.",
+      "Aumentando o estoque e prolongando prazos de entrega."
     ],
     correta: 0,
-    detalhesCorreto: "A integração ajusta a produção à demanda, eliminando excessos.",
-    detalhesIncorreto: "As outras alternativas não são compatíveis com o Lean.",
+    explicacoes: [
+      "Correta. A integração otimiza o fluxo de materiais, reduzindo desperdícios e melhorando a eficiência da produção.",
+      "Incorreta. A integração visa otimizar, não separar departamentos, que devem trabalhar em conjunto.",
+      "Incorreta. A integração busca reduzir o estoque e otimizar prazos, o oposto do que essa opção sugere."
+    ],
     dificuldade: "medio"
   },
 
-  // QUESTÕES DIFÍCIEIS (10 questões)
+  // QUESTÕES DIFÍCEIS (10 questões)
   {
     pergunta: "Qual é a importância do giro de estoque para a gestão de uma empresa?",
     cenario: "Avalie como o giro impacta custos e reposição.",
     opcoes: [
       "Indica a eficiência na renovação dos estoques, ajudando a reduzir custos.",
-      "Serve apenas para medir a quantidade armazenada.",
-      "É um indicador secundário, sem impacto direto."
+      "É um indicador secundário, sem impacto direto.",
+      "Serve apenas para medir a quantidade armazenada."
     ],
     correta: 0,
-    detalhesCorreto: "Revela a rapidez com que os produtos são vendidos e repostos.",
-    detalhesIncorreto: "As outras alternativas não capturam essa importância.",
+    explicacoes: [
+      "Correta. Giro de estoque alto indica rápida renovação, menor custo de armazenagem e maior eficiência.",
+      "Incorreta. Giro de estoque é um indicador chave de desempenho, com impacto direto nas finanças.",
+      "Incorreta. Medir quantidade é um aspecto, mas o giro avalia a dinâmica e a saúde do estoque."
+    ],
     dificuldade: "dificil"
   },
   {
@@ -355,12 +409,15 @@ export const perguntas = [
     cenario: "Planejar os níveis com base em previsões evita excessos e faltas.",
     opcoes: [
       "Permite ajustar os estoques conforme variações do mercado.",
-      "Serve apenas para registrar dados históricos.",
-      "É aplicável somente em empresas de grande porte."
+      "É aplicável somente em empresas de grande porte.",
+      "Serve apenas para registrar dados históricos."
     ],
     correta: 0,
-    detalhesCorreto: "A previsão possibilita ajustar os estoques, minimizando custos e rupturas.",
-    detalhesIncorreto: "As outras alternativas não capturam sua importância estratégica.",
+    explicacoes: [
+      "Correta. Previsão de demanda permite ajustar o estoque proativamente, otimizando níveis e custos.",
+      "Incorreta. Previsão de demanda é valiosa para empresas de todos os tamanhos, adaptando-se à escala.",
+      "Incorreta. Histórico é base para previsão, mas o objetivo é orientar ações futuras, não só registrar o passado."
+    ],
     dificuldade: "dificil"
   },
   {
@@ -368,12 +425,15 @@ export const perguntas = [
     cenario: "Métodos estatísticos avançados podem ajustar os níveis em mercados voláteis.",
     opcoes: [
       "Permite ajustar dinamicamente os estoques com base em modelos estatísticos.",
-      "Não é relevante, pois a intuição do gestor é suficiente.",
-      "Só é aplicável em mercados estáveis."
+      "Só é aplicável em mercados estáveis.",
+      "Não é relevante, pois a intuição do gestor é suficiente."
     ],
     correta: 0,
-    detalhesCorreto: "Métodos quantitativos ajudam a antecipar variações e ajustar os estoques.",
-    detalhesIncorreto: "Confiar apenas na intuição pode levar a erros.",
+    explicacoes: [
+      "Correta. Métodos quantitativos oferecem precisão e adaptabilidade para gerir estoque em mercados incertos.",
+      "Incorreta. Mercados voláteis se beneficiam ainda mais de métodos quantitativos para decisões assertivas.",
+      "Incorreta. Intuição é limitada em cenários complexos; métodos quantitativos oferecem base analítica."
+    ],
     dificuldade: "dificil"
   },
   {
@@ -381,12 +441,15 @@ export const perguntas = [
     cenario: "Sistemas integrados melhoram a comunicação e o controle dos estoques.",
     opcoes: [
       "Fornecendo dados em tempo real para decisões precisas.",
-      "Aumentando a burocracia e os custos operacionais sem agregar valor.",
-      "Limitando a flexibilidade do processo de reposição."
+      "Limitando a flexibilidade do processo de reposição.",
+      "Aumentando a burocracia e os custos operacionais sem agregar valor."
     ],
     correta: 0,
-    detalhesCorreto: "Um ERP integra informações e oferece uma visão completa e atualizada.",
-    detalhesIncorreto: "Um ERP bem configurado agrega valor à gestão.",
+    explicacoes: [
+      "Correta. ERP integra dados de estoque em tempo real, facilitando decisões rápidas e eficientes.",
+      "Incorreta. ERP, quando bem implementado, aumenta a flexibilidade e a capacidade de resposta do estoque.",
+      "Incorreta. ERP visa reduzir burocracia e otimizar custos, integrando informações e automatizando processos."
+    ],
     dificuldade: "dificil"
   },
   {
@@ -398,34 +461,43 @@ export const perguntas = [
       "Tornando os processos mais lentos por excesso de monitoramento."
     ],
     correta: 0,
-    detalhesCorreto: "Mitigar riscos mantém a produção contínua e alinhada ao Lean.",
-    detalhesIncorreto: "Embora haja custos, a prevenção gera economia a longo prazo.",
+    explicacoes: [
+      "Correta. Gestão de riscos Lean garante fluxo contínuo, evitando paradas e otimizando a performance.",
+      "Incorreta. Gestão de riscos proativa é mais econômica que lidar com crises reativamente.",
+      "Incorreta. Monitoramento de riscos, se eficiente, agiliza processos, em vez de torná-los lentos."
+    ],
     dificuldade: "dificil"
   },
   {
     pergunta: "Qual é o trade-off essencial na gestão de estoques em mercados dinâmicos?",
     cenario: "Analise o equilíbrio entre manter estoque suficiente e os custos de armazenagem.",
     opcoes: [
-      "Entre manter níveis altos e reduzir o risco de rupturas, considerando os custos.",
       "Entre reduzir o estoque ao máximo e perder a capacidade de atender à demanda.",
+      "Entre manter níveis altos e reduzir o risco de rupturas, considerando os custos.",
       "Entre investir em tecnologia e manter métodos tradicionais de gestão."
     ],
-    correta: 0,
-    detalhesCorreto: "O desafio é equilibrar o custo de manter estoques elevados com o risco de ruptura.",
-    detalhesIncorreto: "Reduzir demais o estoque pode ocasionar faltas.",
+    correta: 1,
+    explicacoes: [
+      "Incorreta. Reduzir estoque ao extremo pode ser arriscado, mas o trade-off principal envolve custos.",
+      "Correta. O trade-off central é balancear custos de estoque (armazenagem) e o risco de falta de produtos.",
+      "Incorreta. Tecnologia é um meio para otimizar a gestão, não o trade-off principal em si."
+    ],
     dificuldade: "dificil"
   },
   {
     pergunta: "Em um cenário de alta incerteza, qual abordagem quantitativa avançada pode melhorar a previsão de demanda?",
     cenario: "Mercados voláteis exigem métodos que capturem variações rápidas na demanda.",
     opcoes: [
+      "Benchmarking",
       "Modelos ARIMA",
-      "Análise SWOT",
-      "Benchmarking"
+      "Análise SWOT"
     ],
-    correta: 0,
-    detalhesCorreto: "Modelos ARIMA são robustos para previsão em cenários voláteis.",
-    detalhesIncorreto: "Análise SWOT é qualitativa; Benchmarking é comparativo.",
+    correta: 1,
+    explicacoes: [
+      "Incorreta. Benchmarking compara práticas, mas não prevê demanda quantitativamente.",
+      "Correta. Modelos ARIMA (AutoRegressive Integrated Moving Average) são eficazes para prever demanda em séries temporais voláteis.",
+      "Incorreta. Análise SWOT avalia cenários, mas não é um método quantitativo de previsão de demanda."
+    ],
     dificuldade: "dificil"
   },
   {
@@ -433,12 +505,15 @@ export const perguntas = [
     cenario: "Six Sigma utiliza ferramentas estatísticas para identificar causas raízes e melhorar a qualidade.",
     opcoes: [
       "Ao utilizar ferramentas estatísticas para identificar causas raízes.",
-      "Ao eliminar todas as variações no processo.",
-      "Ao reduzir o tempo de setup sem análise de qualidade."
+      "Ao reduzir o tempo de setup sem análise de qualidade.",
+      "Ao eliminar todas as variações no processo."
     ],
     correta: 0,
-    detalhesCorreto: "Six Sigma identifica e elimina causas de defeitos com ferramentas estatísticas.",
-    detalhesIncorreto: "Eliminar todas as variações é inviável.",
+    explicacoes: [
+      "Correta. Six Sigma complementa o Lean com ferramentas estatísticas para identificar e eliminar as causas de defeitos.",
+      "Incorreta. Reduzir setup é Lean, mas Six Sigma foca na análise estatística para qualidade.",
+      "Incorreta. Eliminar *todas* as variações é um objetivo idealizado, Six Sigma busca reduzir variações significativas."
+    ],
     dificuldade: "dificil"
   },
   {
@@ -446,12 +521,15 @@ export const perguntas = [
     cenario: "A IoT permite monitoramento em tempo real e automação que otimizam a reposição.",
     opcoes: [
       "Fornecendo monitoramento em tempo real e automação de reposição.",
-      "Aumentando os custos operacionais sem ganhos de eficiência.",
-      "Limitando a comunicação entre setores."
+      "Limitando a comunicação entre setores.",
+      "Aumentando os custos operacionais sem ganhos de eficiência."
     ],
     correta: 0,
-    detalhesCorreto: "A IoT possibilita monitorar os estoques em tempo real e automatizar a reposição.",
-    detalhesIncorreto: "Os ganhos de eficiência geralmente superam os custos.",
+    explicacoes: [
+      "Correta. IoT na gestão de estoque oferece visibilidade em tempo real e automatiza processos, otimizando a operação.",
+      "Incorreta. IoT melhora a comunicação e integração de dados, não limita a comunicação setorial.",
+      "Incorreta. IoT, se bem implementada, traz eficiência e redução de custos a longo prazo."
+    ],
     dificuldade: "dificil"
   },
   {
@@ -459,14 +537,18 @@ export const perguntas = [
     cenario: "A análise preditiva pode identificar antecipadamente falhas e oportunidades de melhoria.",
     opcoes: [
       "Permitir a identificação antecipada de falhas e oportunidades de melhoria.",
-      "Garantir a estabilidade dos processos sem mudanças.",
-      "Substituir a necessidade de feedback dos colaboradores."
+      "Substituir a necessidade de feedback dos colaboradores.",
+      "Garantir a estabilidade dos processos sem mudanças."
     ],
     correta: 0,
-    detalhesCorreto: "A análise preditiva identifica problemas antes que ocorram, apoiando o Kaizen.",
-    detalhesIncorreto: "Estabilidade sem mudanças contraria a melhoria contínua.",
+    explicacoes: [
+      "Correta. Análise preditiva potencializa o Kaizen ao antecipar problemas e oportunidades, guiando a melhoria contínua.",
+      "Incorreta. Análise preditiva complementa, mas não substitui o feedback humano, essencial no Kaizen.",
+      "Incorreta. Kaizen e análise preditiva visam a melhoria contínua, não a estabilidade estática."
+    ],
     dificuldade: "dificil"
   }
+
 ];
 
 // Função para embaralhar arrays (Algoritmo Fisher-Yates)
