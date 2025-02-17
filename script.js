@@ -8,7 +8,7 @@ let perguntasRespondidas = 0,
     personagemSelecionado = null,
     nomeJogador = "",
     erros = 0,
-    MAX_ERROS = 4,
+    MAX_ERROS = 10,
     progresso = 0;
 
 import { perguntas } from "./perguntas.js";
