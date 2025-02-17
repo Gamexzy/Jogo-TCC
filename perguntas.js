@@ -550,23 +550,3 @@ export const perguntas = [
   }
 
 ];
-
-// Função para embaralhar arrays (Algoritmo Fisher-Yates)
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
-// Embaralhar as opções e atualizar índice correto para cada pergunta
-perguntas.forEach(pergunta => {
-  // Salvar a resposta correta original
-  const respostaOriginal = pergunta.opcoes[pergunta.correta];
-
-  // Embaralhar as opções
-  shuffleArray(pergunta.opcoes);
-
-  // Atualizar índice da resposta correta
-  pergunta.correta = pergunta.opcoes.indexOf(respostaOriginal);
-});
