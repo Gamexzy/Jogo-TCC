@@ -161,31 +161,42 @@ function proximaPergunta() {
 }
 
 function exibirResultado() {
-  document.getElementById("quiz").classList.add("hidden");
-  document.getElementById("resultado").classList.remove("hidden");
-  document.getElementById("mensagem").innerHTML = `
-    ${nomeJogador}, ${acertos >= 7 ?
-    "Parabéns! Sua gestão melhorou a empresa!" :
-    "Sua empresa enfrentou dificuldades. Tente novamente!"}
-  `;
-  document.getElementById("pontuacao").textContent =
-    "Você acertou " + acertos + " de " + TOTAL_PERGUNTAS + " perguntas.";
+    document.getElementById("quiz").classList.add("hidden");
+    document.getElementById("resultado").classList.remove("hidden");
 
-  const rankingAntigo = document.getElementById("ranking");
-  if (rankingAntigo) rankingAntigo.remove();
+    let mensagemFinal = ""; // Variável para armazenar a mensagem final
 
-  fetch('http://localhost:3000/submit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ score: acertos })
-  })
-  .then(res => res.json())
-  .then(() => fetch('http://localhost:3000/ranking?score=' + acertos))
-  .then(res => res.json())
-  .then(data => mostrarRanking(data.percentile))
-  .catch(err => console.error(err));
+    if (acertos === TOTAL_PERGUNTAS) {
+        mensagemFinal = `${nomeJogador}, gestão impecável! A empresa está prosperando sob sua liderança!`;
+    } else if (acertos >= 8) {
+        mensagemFinal = `${nomeJogador}, excelente desempenho! Sua gestão trouxe ótimos resultados para a empresa.`;
+    } else if (acertos >= 6) {
+        mensagemFinal = `${nomeJogador}, bom trabalho! A empresa está estável, mas há espaço para melhorias.`;
+    } else if (acertos >= 4) {
+        mensagemFinal = `${nomeJogador}, desempenho razoável. A empresa enfrentou alguns desafios, mas se manteve.`;
+    } else {
+        mensagemFinal = `${nomeJogador}, sua gestão precisa melhorar! A empresa está em dificuldades. Revise suas estratégias!`;
+    }
+
+
+    document.getElementById("mensagem").innerHTML = mensagemFinal; // Usa a mensagem dinâmica
+    document.getElementById("pontuacao").textContent =
+        "Você acertou " + acertos + " de " + TOTAL_PERGUNTAS + " perguntas.";
+
+    const rankingAntigo = document.getElementById("ranking");
+    if (rankingAntigo) rankingAntigo.remove();
+
+    fetch('http://localhost:3000/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ score: acertos })
+    })
+    .then(res => res.json())
+    .then(() => fetch('http://localhost:3000/ranking?score=' + acertos))
+    .then(res => res.json())
+    .then(data => mostrarRanking(data.percentile))
+    .catch(err => console.error(err));
 }
-
 function exibirDerrota() {
   document.getElementById("quiz").classList.add("hidden");
   document.getElementById("explicacao").classList.add("hidden");
