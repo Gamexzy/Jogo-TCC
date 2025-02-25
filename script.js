@@ -61,7 +61,8 @@ function selecionarPergunta() {
 function iniciarJogo() {
   document.getElementById("intro").classList.add("hidden");
   document.getElementById("quiz").classList.remove("hidden");
-  carregarPergunta
+  carregarPergunta()
+
 }
 
 function updateProgress() {
