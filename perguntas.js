@@ -32,18 +32,18 @@ export const perguntas = [
     ]
   },
   {
-    cenario: "No método 5S, 'Seiri' é o primeiro passo. O que ele significa na prática?",
-    pergunta: "Pense em organizar sua mesa de trabalho. O que você faria primeiro?",
+    cenario: "Uma equipe em uma empresa está tendo dificuldades com um processo lento e complicado para responder às dúvidas dos clientes. Os clientes reclamam que demoram muito para ter suas perguntas respondidas e que as respostas nem sempre resolvem o problema.",
+    pergunta: "Pensando no 'Kaizen',que é uma ferramenta de melhoria contínua, qual a melhor forma dessa equipe começar a melhorar esse processo de atendimento aos clientes?",
     opcoes: [
-      "Tirar tudo o que não precisa e deixar só o essencial.",
-      "Fazer uma faxina geral.",
-      "Arrumar tudo o que você precisa em seu devido lugar."
+      "Implementar um novo sistema tecnológico avançado para automatizar o atendimento, visando uma solução rápida e moderna.",
+      "Contratar uma consultoria especializada para redesenhar o processo de atendimento, buscando uma solução eficiente baseada em conhecimento técnico.",
+      "Começar com pequenas mudanças no processo atual, incentivando a equipe a sugerir e testar melhorias contínuas no dia a dia."
     ],
-    correta: 0,
+    correta: 2,
     explicacoes: [
-      "Correta. 'Seiri' (Utilização) foca em remover o desnecessário para otimizar o espaço e recursos.",
-      "Incorreta. Faxina geral é mais abrangente e menos focada no descarte do desnecessário.",
-      "Incorreta. Arrumar vem depois de descartar o desnecessário, no 'Seiton' (Organização)."
+      "Incorreta.  Embora a tecnologia possa ajudar muito, apenas implementar um sistema novo não garante a melhoria contínua do Kaizen.  Essa opção pode parecer uma solução rápida, mas o Kaizen nos lembra que a melhoria é um processo constante, não uma solução mágica. Além disso, ignora a experiência da equipe, que é fundamental no Kaizen.",
+      "Incorreta. Contratar especialistas pode trazer conhecimento técnico valioso, e pode até gerar uma solução eficiente no papel.  Porém, o Kaizen valoriza muito o conhecimento prático de quem executa o trabalho.  A equipe é quem melhor conhece os problemas do dia a dia.  Uma consultoria externa, sozinha, pode não engajar a equipe na melhoria contínua, que é a chave do Kaizen.",
+      "Correta! Essa é a essência do Kaizen em ação!  O Kaizen é sobre melhoria contínua e gradual.  Começar com pequenas mudanças, testar, aprender, ajustar e incentivar a equipe a participar é o caminho mais eficaz para construir um processo de atendimento melhor e que melhore sempre, dia após dia.  Essa opção valoriza a prática, a equipe e a melhoria constante, que são os pilares do Kaizen."
     ]
   },
   {
