@@ -250,7 +250,6 @@ document.getElementById('btnConfirmarNome').addEventListener('click', () => {
   if (nomeJogador) {
     document.getElementById("nome").classList.add("hidden");
     document.getElementById("quiz").classList.remove("hidden");
-    document.getElementById("company-bar-container").classList.remove("hidden");
     criarTabuleiro(personagemSelecionado);
     perguntasRespondidas = 0;
     acertos = 0;
