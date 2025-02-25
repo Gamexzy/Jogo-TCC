@@ -3,7 +3,7 @@ let indicesUsados = new Set();
 let perguntasRespondidas = 0,
     acertos = 0,
     companyState = 50,
-    TOTAL_PERGUNTAS = 10,
+    TOTAL_PERGUNTAS = 5,
     perguntaAtual,
     personagemSelecionado = null,
     nomeJogador = "",
