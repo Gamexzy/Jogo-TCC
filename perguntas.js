@@ -17,8 +17,8 @@ export const perguntas = [
   },
   {
     
-    cenario: "Qual a principal ideia por trás do 'Lean Manufacturing'?",
-    pergunta: "O Lean Manufacturing busca fazer mais e melhor, mas sem desperdiçar nada.",
+    cenario: "Em uma fábrica de automóveis, muitos materiais são desperdiçados, há atrasos na linha de produção, e os funcionários perdem tempo procurando ferramentas. A gestão percebe que esses problemas estão elevando os custos e diminuindo a produtividade. Eles decidem implementar o 'Lean Manufacturing' para resolver essas questões.",
+    pergunta: "Qual a principal ideia por trás do 'Lean Manufacturing'?",
     opcoes: [
       "Aumentar a produção ao máximo, sem se importar muito com a qualidade final.",
       "Fazer o máximo de produtos, gastando o mínimo possível e evitando qualquer tipo de desperdício.",
