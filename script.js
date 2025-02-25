@@ -5,8 +5,6 @@ let perguntasRespondidas = 0,
     companyState = 50,
     TOTAL_PERGUNTAS = 5,
     perguntaAtual,
-    personagemSelecionado = null,
-    nomeJogador = "",
     erros = 0,
     MAX_ERROS = 10,
     progresso = 0;
@@ -62,7 +60,8 @@ function selecionarPergunta() {
 //fluxo de jogo//
 function iniciarJogo() {
   document.getElementById("intro").classList.add("hidden");
-  document.getElementById("quiz").classList.remove("hidden")
+  document.getElementById("quiz").classList.remove("hidden");
+  carregarPergunta
 }
 
 function updateProgress() {
