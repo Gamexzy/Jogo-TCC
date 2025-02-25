@@ -122,7 +122,6 @@ function verificarResposta(i, btn) {
 
   progresso++;
   companyState = Math.min(Math.max(companyState, 0), 100);
-  updateCompanyBar();
   perguntasRespondidas++;
 
   if (erros >= MAX_ERROS) {
@@ -251,7 +250,6 @@ document.getElementById('btnConfirmarNome').addEventListener('click', () => {
     acertos = 0;
     companyState = 50;
     indicesUsados.clear();
-    updateCompanyBar();
     carregarPergunta();
   } else {
     alert("Digite seu nome!");
