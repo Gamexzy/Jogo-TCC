@@ -26,9 +26,9 @@ export const perguntas = [
     ],
     correta: 1,
     explicacoes: [
-      "Incorreta. Lean Manufacturing prioriza a qualidade e a eficiência, não apenas a quantidade.",
-      "Correta. Lean Manufacturing visa a produção eficiente, eliminando desperdícios e otimizando recursos.",
-      "Incorreta. Lean Manufacturing valoriza a participação de todos, não apenas decisões centralizadas."
+      "Incorreta.  Focar apenas em aumentar a produção não resolveria os problemas da fábrica de automóveis. O 'Lean Manufacturing' busca sim aumentar a produção, mas priorizando a eficiência e a qualidade, para evitar o desperdício de materiais e os atrasos que estão elevando os custos.",
+      "Correta. Essa é a principal ideia do 'Lean Manufacturing'!  Na fábrica de automóveis, isso significa produzir mais carros, utilizando o mínimo de materiais, evitando desperdícios em cada etapa da linha de produção, e otimizando o tempo para acabar com os atrasos e aumentar a produtividade.",
+      "Incorreta. O 'Lean Manufacturing' prega justamente o contrário! Para resolver os problemas da fábrica de automóveis, é essencial que todos os funcionários participem, dando ideias e ajudando a encontrar soluções para reduzir desperdícios e melhorar os processos. Não é só decisão dos chefes, mas um esforço de toda a equipe."
     ]
   },
   {
