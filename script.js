@@ -160,15 +160,15 @@ function exibirResultado() {
     let mensagemFinal = ""; // Variável para armazenar a mensagem final
 
     if (acertos === TOTAL_PERGUNTAS) {
-        mensagemFinal = `${nomeJogador}, gestão impecável! A empresa está prosperando sob sua liderança!`;
+        mensagemFinal = `Parabéns!, gestão impecável! A empresa está prosperando sob sua liderança!`;
     } else if (acertos >= 8) {
-        mensagemFinal = `${nomeJogador}, excelente desempenho! Sua gestão trouxe ótimos resultados para a empresa.`;
+        mensagemFinal = `Parabéns!, excelente desempenho! Sua gestão trouxe ótimos resultados para a empresa.`;
     } else if (acertos >= 6) {
-        mensagemFinal = `${nomeJogador}, bom trabalho! A empresa está estável, mas há espaço para melhorias.`;
+        mensagemFinal = `Parabéns!, bom trabalho! A empresa está estável, mas há espaço para melhorias.`;
     } else if (acertos >= 4) {
-        mensagemFinal = `${nomeJogador}, desempenho razoável. A empresa enfrentou alguns desafios, mas se manteve.`;
+        mensagemFinal = `Parabéns!, desempenho razoável. A empresa enfrentou alguns desafios, mas se manteve.`;
     } else {
-        mensagemFinal = `${nomeJogador}, sua gestão precisa melhorar! A empresa está em dificuldades. Revise suas estratégias!`;
+        mensagemFinal = `Parabéns!, sua gestão precisa melhorar! A empresa está em dificuldades. Revise suas estratégias!`;
     }
 
 
