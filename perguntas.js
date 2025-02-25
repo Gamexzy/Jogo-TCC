@@ -1,7 +1,8 @@
 export const perguntas = [
   {
-    pergunta: "Imagine que você é o gerente de uma empresa. Qual seria o objetivo número um ao cuidar do estoque?",
-    cenario: "Pense em equilibrar o dinheiro da empresa com a produção contínua dos produtos.",
+    cenario: "Imagine que você é o gerente de uma empresa. Qual seria o objetivo número um ao cuidar do estoque?",
+    pergunta: "Pense em equilibrar o dinheiro da empresa com a produção contínua dos produtos.",
+
     opcoes: [
       "Gastar o mínimo possível com estoque, mas sempre ter produtos para produzir.",
       "Acabar com o estoque de vez para não ter dor de cabeça.",
@@ -15,8 +16,9 @@ export const perguntas = [
     ]
   },
   {
-    pergunta: "Qual a principal ideia por trás do 'Lean Manufacturing'?",
-    cenario: "O Lean Manufacturing busca fazer mais e melhor, mas sem desperdiçar nada.",
+    
+    cenario: "Qual a principal ideia por trás do 'Lean Manufacturing'?",
+    pergunta: "O Lean Manufacturing busca fazer mais e melhor, mas sem desperdiçar nada.",
     opcoes: [
       "Aumentar a produção ao máximo, sem se importar muito com a qualidade final.",
       "Fazer o máximo de produtos, gastando o mínimo possível e evitando qualquer tipo de desperdício.",
@@ -30,8 +32,8 @@ export const perguntas = [
     ]
   },
   {
-    pergunta: "No método 5S, 'Seiri' é o primeiro passo. O que ele significa na prática?",
-    cenario: "Pense em organizar sua mesa de trabalho. O que você faria primeiro?",
+    cenario: "No método 5S, 'Seiri' é o primeiro passo. O que ele significa na prática?",
+    pergunta: "Pense em organizar sua mesa de trabalho. O que você faria primeiro?",
     opcoes: [
       "Tirar tudo o que não precisa e deixar só o essencial.",
       "Fazer uma faxina geral.",
@@ -45,8 +47,8 @@ export const perguntas = [
     ]
   },
   {
-    pergunta: "O que realmente significa 'Kaizen' no dia a dia de uma empresa?",
-    cenario: "Kaizen é sobre nunca parar de buscar melhorias, não importa quão pequenas.",
+    cenario: "O que realmente significa 'Kaizen' no dia a dia de uma empresa?",
+    pergunta: "Kaizen é sobre nunca parar de buscar melhorias, não importa quão pequenas.",
     opcoes: [
       "Melhorar um pouquinho a cada dia, com pequenas mudanças constantes.",
       "Fazer grandes mudanças de uma vez só, sem pensar muito.",
@@ -60,8 +62,8 @@ export const perguntas = [
     ]
   },
   {
-    pergunta: "Em Lean Manufacturing, qual palavra usamos para falar de tudo aquilo que não traz valor ao produto ou serviço?",
-    cenario: "Imagine que você está limpando sua casa. O que você considera 'lixo' nesse contexto?",
+    cenario: "Em Lean Manufacturing, qual palavra usamos para falar de tudo aquilo que não traz valor ao produto ou serviço?",
+    pergunta: "Imagine que você está limpando sua casa. O que você considera 'lixo' nesse contexto?",
     opcoes: [
       "Poka-yoke",
       "Muda",
