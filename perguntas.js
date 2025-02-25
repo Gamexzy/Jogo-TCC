@@ -62,18 +62,18 @@ export const perguntas = [
     ]
   },
   {
-    cenario: "Em Lean Manufacturing, qual palavra usamos para falar de tudo aquilo que não traz valor ao produto ou serviço?",
-    pergunta: "Imagine que você está limpando sua casa. O que você considera 'lixo' nesse contexto?",
+    cenario: "A recepcionista de uma clínica médica percebe que a mesa de atendimento está sempre desorganizada.  Há canetas que não funcionam, papéis de pacientes misturados, e demora para encontrar os formulários certos quando um paciente chega.",
+    pergunta: "Qual dos '5S' ajudaria a recepcionista a manter a mesa de atendimento sempre organizada e com tudo o que ela precisa à mão, de forma fácil e rápida?",
     opcoes: [
-      "Poka-yoke",
-      "Muda",
-      "Kanban"
+      "Seiso (Limpeza)",
+      "Seiton (Organização)",
+      "Shitsuke (Senso de Disciplina)"
     ],
     correta: 1,
     explicacoes: [
-      "Incorreta. Poka-yoke é um mecanismo à prova de erros.",
-      "Correta. 'Muda' é o termo Lean para desperdício, atividades que não agregam valor.",
-      "Incorreta. Kanban é um sistema de gestão visual da produção."
+      "Incorreta. 'Seiso' (Limpeza) é sobre manter o ambiente limpo, eliminando sujeira e resíduos. É importante para a organização, mas não é o 'S' focado em arrumar as coisas em seus lugares certos. Limpar a mesa é bom, mas não resolve o problema de organização se tudo continuar fora do lugar depois.",
+      "Correta! 'Seiton' (Organização) é o 'S' da arrumação, de colocar cada coisa em seu devido lugar para que seja fácil de encontrar e usar.  Na mesa da recepcionista, o 'Seiton' significa definir onde cada tipo de caneta, papel e formulário deve ficar, para que ela encontre tudo rapidamente e a mesa fique sempre organizada.",
+      "Incorreta. 'Shitsuke' (Manutenção da Disciplina) é sobre manter a organização e a limpeza sempre, seguindo as regras e os padrões definidos. É muito importante para garantir que a mesa continue organizada no dia a dia. Mas, antes de manter a disciplina, é preciso organizar a mesa primeiro (Seiton) e definir os padrões a serem seguidos."
     ]
   }
 ];
