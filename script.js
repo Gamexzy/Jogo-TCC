@@ -105,7 +105,6 @@ function verificarResposta(i, btn) {
   if (correta) {
     acertos++;
     btn.classList.add("correct");
-    casas[progresso].style.background = "green";
     let base = (perguntaAtual.dificuldade === "dificil") ? 15 :
                (perguntaAtual.dificuldade === "medio") ? 10 : 5;
     let fator = ((100 - companyState) / 100) * 0.5 + 0.5;
