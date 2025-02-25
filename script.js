@@ -44,12 +44,7 @@ function shuffleArray(array) {
 }
 
 function selecionarPergunta() {
-  let filtradas;
-  if (Math.round(companyState) === 50) filtradas = perguntas;
-  else if (companyState >= 70) filtradas = perguntas.filter(p => p.dificuldade === "dificil");
-  else if (companyState >= 30) filtradas = perguntas.filter(p => p.dificuldade === "medio");
-  else filtradas = perguntas.filter(p => p.dificuldade === "facil");
-
+  let filtradas = perguntas; // Agora 'filtradas' simplesmente recebe todas as perguntas
   let disponiveis = filtradas.filter(p => !indicesUsados.has(perguntas.indexOf(p)));
   if (disponiveis.length === 0) { indicesUsados.clear(); disponiveis = filtradas; }
   const escolha = disponiveis[Math.floor(Math.random() * disponiveis.length)];
