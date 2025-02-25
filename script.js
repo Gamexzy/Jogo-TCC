@@ -219,41 +219,9 @@ function mostrarRanking(percentile) {
 //Tabuleiro
 import { criarTabuleiro, excluirImagem, apagarTabuleiro, moverImagem } from "./tabuleiro.js";
 
-// Event Listeners
-
-document.querySelectorAll('.personagem-card').forEach(card => {
-  card.addEventListener('click', () => {
-    document.querySelectorAll('.personagem-card').forEach(c => c.classList.remove('selected'));
-    card.classList.add('selected');
-
     // Captura o src da imagem do personagem
     personagemSelecionado = card.querySelector('img').src;
   });
-});
-
-document.getElementById('btnConfirmarPersonagem').addEventListener('click', () => {
-  if (personagemSelecionado) {
-    document.getElementById("personagem").classList.add("hidden");
-    document.getElementById("nome").classList.remove("hidden");
-  } else {
-    alert("Selecione um personagem!");
-  }
-});
-
-document.getElementById('btnConfirmarNome').addEventListener('click', () => {
-  nomeJogador = document.getElementById('inputNome').value.trim();
-  if (nomeJogador) {
-    document.getElementById("nome").classList.add("hidden");
-    document.getElementById("quiz").classList.remove("hidden");
-    criarTabuleiro(personagemSelecionado);
-    perguntasRespondidas = 0;
-    acertos = 0;
-    companyState = 50;
-    indicesUsados.clear();
-    carregarPergunta();
-  } else {
-    alert("Digite seu nome!");
-  }
 });
 
 document.getElementById("btnIniciar").addEventListener("click", iniciarJogo);
