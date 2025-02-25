@@ -219,11 +219,6 @@ function mostrarRanking(percentile) {
 //Tabuleiro
 import { criarTabuleiro, excluirImagem, apagarTabuleiro, moverImagem } from "./tabuleiro.js";
 
-    // Captura o src da imagem do personagem
-    personagemSelecionado = card.querySelector('img').src;
-  });
-});
-
 document.getElementById("btnIniciar").addEventListener("click", iniciarJogo);
 document.getElementById("btnReiniciar").addEventListener("click", reiniciarJogo);
 document.getElementById("btnContinuar").addEventListener("click", proximaPergunta);
