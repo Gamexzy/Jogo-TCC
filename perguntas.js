@@ -73,7 +73,7 @@ export const perguntas = [
     explicacoes: [
       "Incorreta. 'Seiso' (Limpeza) é sobre manter o ambiente limpo, eliminando sujeira e resíduos. É importante para a organização, mas não é o 'S' focado em arrumar as coisas em seus lugares certos. Limpar a mesa é bom, mas não resolve o problema de organização se tudo continuar fora do lugar depois.",
       "Correta! 'Seiton' (Organização) é o 'S' da arrumação, de colocar cada coisa em seu devido lugar para que seja fácil de encontrar e usar.  Na mesa da recepcionista, o 'Seiton' significa definir onde cada tipo de caneta, papel e formulário deve ficar, para que ela encontre tudo rapidamente e a mesa fique sempre organizada.",
-      "Incorreta. 'Shitsuke' (Manutenção da Disciplina) é sobre manter a organização e a limpeza sempre, seguindo as regras e os padrões definidos. É muito importante para garantir que a mesa continue organizada no dia a dia. Mas, antes de manter a disciplina, é preciso organizar a mesa primeiro (Seiton) e definir os padrões a serem seguidos."
+      "Incorreta. 'Shitsuke' (Senso de Disciplina) é sobre manter a organização e a limpeza sempre, seguindo as regras e os padrões definidos. É muito importante para garantir que a mesa continue organizada no dia a dia. Mas, antes de manter a disciplina, é preciso organizar a mesa primeiro (Seiton) e definir os padrões a serem seguidos."
     ]
   }
 ];
