@@ -111,7 +111,6 @@ function verificarResposta(i, btn) {
     companyState += base * fator;
   } else {
     btn.classList.add("incorrect");
-    casas[progresso].style.background = "red";
     let base = (perguntaAtual.dificuldade === "facil") ? 10 :
                (perguntaAtual.dificuldade === "medio") ? 5 : 2;
     let fator = (companyState / 100) * 0.5 + 0.5;
