@@ -224,7 +224,6 @@ document.getElementById("btnContinuar").addEventListener("click", proximaPergunt
 function reiniciarJogo() {
   document.getElementById("resultado").classList.add("hidden");
   document.getElementById("intro").classList.remove("hidden");
-  document.getElementById("company-bar-container").classList.add("hidden");
   perguntasRespondidas = 0;
   acertos = 0;
   companyState = 50;
