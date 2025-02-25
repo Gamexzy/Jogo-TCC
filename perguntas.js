@@ -10,9 +10,9 @@ export const perguntas = [
     ],
     correta: 1,
     explicacoes: [
-      "Incorreta. Uma lista de tarefas é útil para lembrar o que precisa ser feito, mas pode não ser suficiente para planejar todos os detalhes de um evento. Uma lista te ajuda a lembrar das tarefas, mas não te força a pensar no porquê, onde, quando, como e quanto vai custar o evento de treinamento.e.",
+      "Incorreta. Uma lista de tarefas é útil para lembrar o que precisa ser feito, mas pode não ser suficiente para planejar todos os detalhes de um evento. Uma lista te ajuda a lembrar das tarefas, mas não te força a pensar no porquê, onde, quando, como e quanto vai custar o evento de treinamento.",
       "Correta! O método 5W2H é ideal para planejar eventos e projetos de forma completa. Ele ajuda a equipe a responder 7 perguntas chave: O Que (fazer no treinamento), Por Que (fazer o treinamento), Onde (será), Quando (será), Quem (será responsável), Como (fazer) e Quanto custará.  Com o 5W2H, o planejamento do evento de treinamento fica bem mais organizado e completo.",
-      "Incorreta.  Reuniões de equipe são importantes para discutir ideias, mas só a reunião não garante um planejamento completo.  Em uma reunião, a equipe pode esquecer de definir alguns pontos importantes do treinamento. O 5W2H, por ser um método estruturado, ajuda a não esquecer de nenhum detalhe e a ter um plano mais claro e organizado."
+      "Incorreta. Reuniões de equipe são importantes para discutir ideias, mas só a reunião não garante um planejamento completo.  Em uma reunião, a equipe pode esquecer de definir alguns pontos importantes do treinamento. O 5W2H, por ser um método estruturado, ajuda a não esquecer de nenhum detalhe e a ter um plano mais claro e organizado."
     ]
   },
   {
@@ -47,18 +47,18 @@ export const perguntas = [
     ]
   },
   {
-    cenario: "O que realmente significa 'Kaizen' no dia a dia de uma empresa?",
-    pergunta: "Kaizen é sobre nunca parar de buscar melhorias, não importa quão pequenas.",
+    cenario: "Um restaurante notou que seus clientes estão reclamando da demora no atendimento e que muitos pedidos estão saindo com erros. A gerência quer resolver esses problemas de forma organizada e garantir que as melhorias sejam duradouras.",
+    pergunta: "Qual ciclo de gestão de melhoria contínua seria mais adequado para o restaurante aplicar e resolver esses problemas de atendimento e erros nos pedidos de forma sistemática?",
     opcoes: [
-      "Melhorar um pouquinho a cada dia, com pequenas mudanças constantes.",
-      "Fazer grandes mudanças de uma vez só, sem pensar muito.",
-      "Reduzir custos demitindo pessoas."
+      "Ciclo PDCA (Plan-Do-Check-Act)",
+      "Reunir a equipe para 'chutar ideias' e ver o que funciona",
+      "Fazer uma pesquisa rápida na internet para ver o que outros restaurantes fazem"
     ],
     correta: 0,
     explicacoes: [
-      "Correta. Kaizen é a filosofia de melhoria contínua e incremental, com pequenas mudanças diárias.",
-      "Incorreta. Kaizen foca em melhorias graduais, não em grandes mudanças repentinas.",
-      "Incorreta. Redução de custos por demissão não reflete o princípio de melhoria do Kaizen."
+      "Correta! O Ciclo PDCA é a melhor forma de resolver problemas de um jeito organizado e garantir que as melhorias durem, como o restaurante precisa.  Com o PDCA, o restaurante vai (P)lanejar o que fazer para melhorar o atendimento e os pedidos, (D)esenvolver essas ações, (C)hecar se está dando certo e (A)gir para arrumar o que não funcionou e continuar com o que deu resultado.  É um ciclo que ajuda a melhorar sempre, sem parar.",
+      "Incorreta.  Reunir a equipe para ter ideias é um bom começo, e pode até ser parte da fase de (P)lanejar do PDCA. Mas só 'chutar ideias' não garante que o problema será resolvido de forma organizada e duradoura.  Falta um plano para colocar as ideias em prática, verificar se funcionam e melhorar sempre. O PDCA oferece essa organização e continuidade.",
+      "Incorreta.  Pesquisar na internet pode trazer algumas ideias interessantes, e pode ajudar na fase de (P)lanejar do PDCA. Mas só copiar o que outros fazem pode não funcionar para o restaurante. Cada restaurante é diferente.  E a pesquisa na internet não garante que o restaurante vai testar as ideias, verificar se funcionam e continuar melhorando sempre. O PDCA oferece um jeito mais completo e adaptado para o restaurante resolver seus próprios problemas."
     ]
   },
   {
