@@ -156,11 +156,11 @@ function exibirResultado() {
 
     if (acertos === TOTAL_PERGUNTAS) {
         mensagemFinal = `Parabéns!, gestão impecável! A empresa está prosperando sob sua liderança!`;
-    } else if (acertos >= 8) {
+    } else if (acertos >= 5) {
         mensagemFinal = `Parabéns!, excelente desempenho! Sua gestão trouxe ótimos resultados para a empresa.`;
-    } else if (acertos >= 6) {
-        mensagemFinal = `Parabéns!, bom trabalho! A empresa está estável, mas há espaço para melhorias.`;
     } else if (acertos >= 4) {
+        mensagemFinal = `Parabéns!, bom trabalho! A empresa está estável, mas há espaço para melhorias.`;
+    } else if (acertos >= 3) {
         mensagemFinal = `Parabéns!, desempenho razoável. A empresa enfrentou alguns desafios, mas se manteve.`;
     } else {
         mensagemFinal = `Parabéns!, sua gestão precisa melhorar! A empresa está em dificuldades. Revise suas estratégias!`;
