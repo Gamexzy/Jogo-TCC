@@ -1,18 +1,18 @@
 export const perguntas = [
   {
-    cenario: "Imagine que você é o gerente de uma empresa. Qual seria o objetivo número um ao cuidar do estoque?",
-    pergunta: "Pense em equilibrar o dinheiro da empresa com a produção contínua dos produtos.",
+    cenario: "Uma equipe precisa organizar um evento de treinamento para os novos funcionários da empresa. Para garantir que nada seja esquecido e que o evento seja um sucesso, eles decidem usar uma ferramenta de planejamento.",
+    pergunta: "Qual ferramenta de planejamento é mais adequada para ajudar essa equipe a definir claramente todos os aspectos importantes do evento de treinamento?",
 
     opcoes: [
-      "Gastar o mínimo possível com estoque, mas sempre ter produtos para produzir.",
-      "Acabar com o estoque de vez para não ter dor de cabeça.",
-      "Encher o depósito de estoque para nunca faltar nada, mesmo que sobre muito."
+      "Fazer uma lista de tarefas (checklist)",
+      "Usar o método 5W2H",
+      "Decidir tudo em uma reunião de equipe"
     ],
-    correta: 0,
+    correta: 1,
     explicacoes: [
-      "Correta. Este objetivo equilibra custo e disponibilidade, essencial para a gestão de estoque.",
-      "Incorreta. Eliminar o estoque pode parar a produção e perder vendas.",
-      "Incorreta. Excesso de estoque gera custos desnecessários de armazenagem e obsolescência."
+      "Incorreta. Uma lista de tarefas é útil para lembrar o que precisa ser feito, mas pode não ser suficiente para planejar todos os detalhes de um evento. Uma lista te ajuda a lembrar das tarefas, mas não te força a pensar no porquê, onde, quando, como e quanto vai custar o evento de treinamento.e.",
+      "Correta! O método 5W2H é ideal para planejar eventos e projetos de forma completa. Ele ajuda a equipe a responder 7 perguntas chave: O Que (fazer no treinamento), Por Que (fazer o treinamento), Onde (será), Quando (será), Quem (será responsável), Como (fazer) e Quanto custará.  Com o 5W2H, o planejamento do evento de treinamento fica bem mais organizado e completo.",
+      "Incorreta.  Reuniões de equipe são importantes para discutir ideias, mas só a reunião não garante um planejamento completo.  Em uma reunião, a equipe pode esquecer de definir alguns pontos importantes do treinamento. O 5W2H, por ser um método estruturado, ajuda a não esquecer de nenhum detalhe e a ter um plano mais claro e organizado."
     ]
   },
   {
