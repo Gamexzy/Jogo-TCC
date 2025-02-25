@@ -45,10 +45,6 @@ function shuffleArray(array) {
   }
 }
 
-function updateCompanyBar() {
-  document.getElementById("company-bar").style.width = companyState + "%";
-}
-
 function selecionarPergunta() {
   let filtradas;
   if (Math.round(companyState) === 50) filtradas = perguntas;
